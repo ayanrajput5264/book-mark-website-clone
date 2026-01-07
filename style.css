@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+    @font-face {
+        font-family: "poppins";
+        src: url("./fonts/Poppins-Regular.ttf");
+    }
+
+
+/* navbar start */
+
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navlinks{
+    display: flex;
+    gap: 30px;
+    padding: 20px 0px;
+    align-items: center;
+}
+.navlinks li{
+    list-style: none;
+
+}
+.navlinks li a{
+    text-decoration: none;
+    font-family: poppins;
+    color: black;
+    text-transform: uppercase;
+}
+.navlinks button{
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    background-color:red;
+    font-family: poppins;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+}
+.bars{
+    display: none;
+}
+
+/* nanbar media queries */
+@media screen and (max-width:480px) {
+  .navlinks{
+    display: none;
+  }
+  .bars{
+    display: block;
+  }
+  .herosec{
+    flex-direction: column;
+  }
+  .herocon{
+    width: 20%;
+    padding: 10px;
+  }
+}
+    
+/* media queries end */
+/* navbar end */
+
+/* hero section start */
+.herosec{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px ;
+    position: relative;
+}
+.herocon{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    font-family: poppins;
+    font-size: large;
+    font-weight: bold;
+    gap: 20px;
+
+}
+.herocon .btns {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.herocon .btns button{
+    padding: 20px 30px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    background-color: blue;
+    border-radius: 5px;
+    font-family: poppins;
+}
+.btns #second {
+    color: black;
+    background-color: rgb(247, 247, 247);
+    box-shadow: rgb(247, 247, 247); ;
+    
+}
+.btns #second :hover{
+    color: white;
+    background-color: blue;
+}
+.btns #first :hover{
+    color: black;
+    background-color: rgb(247, 247, 247) ;
+}
+.herocon p{
+    color:  rgb(158, 139, 139);;
+}
+.heroimg{
+    width: 30%;
+}
+.heroimg img{
+    width: 100%;
+}
+.rectangle{
+    width: 50%;
+    height: 20rem;
+    color: blue;
+    background-color: blue;
+    display: block;
+    border-bottom-left-radius: 999px;
+    border-top-left-radius: 999px;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    z-index: -5;
+}
+/* hero section end */
